@@ -26,7 +26,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+#Paperclip is handling image uploads
 gem 'paperclip'
+
+#Sorcery is assisting authentication
+gem 'sorcery'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

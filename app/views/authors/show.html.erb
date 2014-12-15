@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>AUTHOR:</strong> <%= @author.username %><br>
+  <strong>EMAIL:</strong> <%= @author.email %>
+</p>
+
+
+<p class="note"><%= link_to 'EDIT', edit_author_path(@author) %> |
+<%= link_to 'BACK', authors_path %></p>

@@ -11,10 +11,12 @@
   <%= link_to tag.name, tag_path(tag) %> |
   <% end %></em>
 </p>
+<% if logged_in? %>
 <p class="note">
   <%= link_to "EDIT", edit_article_path(@article) %> |
   <%= link_to "DELETE", article_path(@article), method: :delete, data: {confirm: "Do you really want to delete this article?"} %>
 </p>
+<% end %>
 
 <br>
 <div style="clear:both;"></div>
