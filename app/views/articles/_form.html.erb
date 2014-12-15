@@ -9,7 +9,11 @@
   <%= f.text_field :title %>
 </p>
 <p>
-  <%= f.label :body %><br />
+  <%= f.label :blurb %> <span class="note">A brief description of what the article is about, which will appear above a READ MORE link on the main articles page.</span><br />
+  <%= f.text_area :blurb %>
+</p>
+<p>
+  <%= f.label :body %> <span class="note">The full text of the article. The blurb is not automatically included in the body.</span><br />
   <%= f.text_area :body %>
 </p>
 <p>
